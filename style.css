@@ -1,11 +1,52 @@
-#gradeGenerator{
-  background-color: grey;
+body{
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-#speedDetector{
-  background-color: aqua;
+h1{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-#salaryCalculator{
-  background-color: blue;
+form{
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+label{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input{
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.hover{
+  background-color: #0069d9;
+}
+
+#error-message{
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
