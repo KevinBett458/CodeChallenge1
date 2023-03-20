@@ -132,3 +132,4 @@ function calculateNSSFContributions(basicSalary) {
   const maximumContribution = 2_160; //NSSF contributions - KES 2,160 per month
     return Math.min(nssfDeductions, maximumContribution);
 }
+}
