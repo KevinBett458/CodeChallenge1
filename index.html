@@ -32,12 +32,17 @@
         <input type="number" id="basic-salary" name="Basic Salary"> <br> <br>
         <label for="benefits">Benefits:</label>
 		    <input type="number" id="benefits" name="benefits"><br><br>
-		    <button type="button">Calculate Net Salary</button>
-
+		    <button type="button" onclick="calculateNetSalary()">Calculate Net Salary</button>
       </form>
-    </div>
 
-    
+      <br>
+      <h2>Results:</h2>
+      <p id="gross-salary"></p>
+      <p id="tax"></p>
+       <p id="nhif-deductions"></p>
+       <p id="nssf-deductions"></p>
+      <p id="net-salary"></p>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
