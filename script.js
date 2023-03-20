@@ -22,14 +22,6 @@ if (marks >=80 && marks<=100){
 alert("Grade: " + grade)
 }
 
-
-const checkButton = document.getElementById("checkButton");
-
-checkButton.addEventListener("click", function() {
-  const speed = document.getElementById("speed").value;
-  calculateDemeritPoints(speed);
-});
-
 function calculateDemeritPoints(speed) {
   const speedLimit = 70;
   const kmPerDemeritPoint = 5;
