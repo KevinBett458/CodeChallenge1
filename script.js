@@ -23,3 +23,32 @@ alert("Grade: " + grade)
 }
 
 
+const checkButton = document.getElementById("checkButton");
+
+checkButton.addEventListener("click", function() {
+  const speed = document.getElementById("speed").value;
+  calculateDemeritPoints(speed);
+});
+
+function checkSpeed(speed) {
+  calculateDemeritPoints(Number(speed));
+}
+
+function calculateDemeritPoints(speed) {
+  const speedLimit = 70;
+  const kmPerPoint = 5;
+  
+  if (speed <= speedLimit) {
+    console.log("Ok");
+    return;
+  }
+  
+  const demeritPoints = Math.floor((speed - speedLimit) / kmPerPoint);
+  
+  if (demeritPoints > 12) {
+    console.log("License suspended");
+  } else {
+    console.log("Points: " + demeritPoints);
+  }
+}
+
