@@ -30,25 +30,20 @@ checkButton.addEventListener("click", function() {
   calculateDemeritPoints(speed);
 });
 
-function checkSpeed(speed) {
-  calculateDemeritPoints(Number(speed));
-}
-
 function calculateDemeritPoints(speed) {
   const speedLimit = 70;
-  const kmPerPoint = 5;
-  
+  const kmPerDemeritPoint = 5;
+
   if (speed <= speedLimit) {
-    console.log("Ok");
-    return;
-  }
-  
-  const demeritPoints = Math.floor((speed - speedLimit) / kmPerPoint);
-  
-  if (demeritPoints > 12) {
-    console.log("License suspended");
+    return "Ok";
   } else {
-    console.log("Points: " + demeritPoints);
+    const demeritPoints = Math.floor((speed - speedLimit) / kmPerDemeritPoint);
+    if (demeritPoints > 12) {
+      return "License suspended";
+    } else {
+      return "Points: " + demeritPoints;
+    }
   }
 }
+
 
